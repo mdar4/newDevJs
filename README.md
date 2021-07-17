@@ -40,3 +40,11 @@ Coordenador da Traco | Consultor de Capacitação na Tegra |
 Diogo Mainardes
 
 Desenvolver Sênior | Arquiteto de soluções e atualmente integrando equipe de Talentos em Tecnologia na empresa Eduzz.
+
+#
+## Módulo 3
+### Front-end / Back-end
+
+
+
+#

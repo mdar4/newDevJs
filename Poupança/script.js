@@ -3,6 +3,36 @@ let saidaSaldo = document.getElementById("saldo");
 let saidaExtrato = document.getElementById("extrato");
 let valorHTML = document.getElementById("valor");
 
+function dataCurta() {
+
+    let data = new Date();
+    let d = data.getDate();
+    let m = data.getMonth()+1;
+    let a = data.getFullYear();
+
+    let h = data.getHours();
+    let min = data.getMinutes();
+
+    if(d.toString.length == 1) {
+        d = '0' + d;
+    }
+
+    if(m.toString.length == 1) {
+        m = '0' + m;
+    }
+
+    if(h.toString.length == 1){
+        h = '0' + h;
+    }
+
+    if(min.toString.length == 1){
+        min = '0' + min;
+    }
+
+    return d + '/' + m + '/' + a + '-' + h +':' + min;
+
+}
+
 let poupanca = {
 
     saldo : 0,
@@ -10,9 +40,11 @@ let poupanca = {
 
     depositar : function() {
 
-        this.saldo += Number(valorHTML.value);
-        saidaSaldo.innerHTML = this.saldo;
-        this.movimentacao.push("Depósito de R$" + valorHTML.value);
+        let valor =  Number(valorHTML.value);
+
+        this.saldo += valor;
+        saidaSaldo.innerHTML = "R$" + this.saldo.toFixed(2);
+        this.movimentacao.push(dataCurta() + "- DEP - R$" + valor.toFixed(2));
         valorHTML.value = "";
         
     },
@@ -25,10 +57,10 @@ let poupanca = {
             alert('Saldo insuficiente !')
         } else {
             this.saldo -= valor;
-            this.movimentacao.push("Saque de R$" + valor);
+            this.movimentacao.push(dataCurta() + "-SAQ - R$" + valor.toFixed(2));
         }
 
-        saidaSaldo.innerHTML = this.saldo;
+        saidaSaldo.innerHTML = "R$" + this.saldo.toFixed(2);
         valorHTML.value = "";
     },
 

@@ -23,4 +23,20 @@ Edgar Domingo de Albuquerque
 Coordenador da Traco | Consultor de Capacitação na Tegra |
 #
 ## Módulo 2
-### Banco de Dados, API e Projeto Prático
+### Banco de Dados, API e Projeto Prático:
+- O que é Banco de Dados
+- Introdução ao SQLite
+- SQLite - Inserts e Selects
+- SQLite - Update e Delete
+- SQLite - Inner e Left Join
+- Programação Web e APIs
+- Relembrando NodeJS
+- Criando uma API
+- Postman , GET e POST
+- PUT e DELETE
+
+#
+### Mentorando :
+Diogo Mainardes
+
+Desenvolver Sênior | Arquiteto de soluções e atualmente integrando equipe de Talentos em Tecnologia na empresa Eduzz.

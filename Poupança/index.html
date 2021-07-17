@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poupança</title>
+</head>
+<body>
+    <p id="titulo" >Poupança $$$</p>
+
+    <p id="saldo" style="background-color: aqua;" >
+        Saldo:
+    </p>
+
+
+    <p id="acoes" >
+        <input id="valor"><br>
+        <br>
+        <button value="Depósito" onclick="poupanca.depositar()";>Depositar</button>
+        <button value="Saque" onclick="poupanca.sacar();">Sacar</button>
+        <button value="Extrato" onclick="poupanca.mostrarExtrato();">Extrato</button>
+    </p>
+
+    <p id="extrato">
+        Extrato:
+    </p>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

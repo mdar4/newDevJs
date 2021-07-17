@@ -12,7 +12,7 @@ let poupanca = {
 
         this.saldo += Number(valorHTML.value);
         saidaSaldo.innerHTML = this.saldo;
-        this.movimentacao.push("Depósito de " + valorHTML.value);
+        this.movimentacao.push("Depósito de R$" + valorHTML.value);
         valorHTML.value = "";
         
     },
@@ -25,7 +25,7 @@ let poupanca = {
             alert('Saldo insuficiente !')
         } else {
             this.saldo -= valor;
-            this.movimentacao.push("Saque de " + valor);
+            this.movimentacao.push("Saque de R$" + valor);
         }
 
         saidaSaldo.innerHTML = this.saldo;
@@ -38,6 +38,7 @@ let poupanca = {
         
         for( i = 0; i <= this.movimentacao.length-1; i++){
             saidaExtrato.innerHTML += this.movimentacao[i] + "<br>";
+
         }
     }
 }
